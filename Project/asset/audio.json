@@ -1,0 +1,9 @@
+{
+  "Horn": {
+    "Path": "Project/asset/audio/Horn.wav",
+    "Scene": [
+      "main"
+    ],
+    "Type": "Sound"
+  }
+}

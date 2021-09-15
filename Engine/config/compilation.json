@@ -1,0 +1,19 @@
+{
+  "Setting": {
+    "project_name": "ShipWreck Project",
+    "exec_name": "project",
+    "module": "SFML",
+    "compile_type": "DEBUG",
+    "build_path": "Build",
+    "asset_path": "Project/asset"
+  },
+  "SFML": {
+    "name": "SfmlModule",
+    "path": "Engine/library/libSfmlModule.so",
+    "include": "Engine/includes/modules/Sfml/includes/",
+    "dependence": {
+      "name": ["sfml-audio", "sfml-graphics", "sfml-system", "sfml-window"],
+      "library": ["Engine/library/libsfml-audio.so", "Engine/library/libsfml-graphics.so", "Engine/library/libsfml-system.so", "Engine/library/libsfml-window.so"]
+    }
+  }
+}
