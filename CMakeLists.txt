@@ -57,7 +57,7 @@ message("\n")
 
 ## <=====================================>
 set( ABS_PATH ${CMAKE_SOURCE_DIR} CACHE STRING "Some user-specified option" )
-cmake_minimum_required( VERSION 3.17...3.20 )
+cmake_minimum_required( VERSION 3.20 )
 set( CMAKE_BUILD_TYPE ${COMPILE_TYPE} ) # Release / RelWithDebInfo / Debug
 set( CMAKE_CXX_STANDARD 20 )
 set( CMAKE_CXX_STANDARD_REQUIRED True )

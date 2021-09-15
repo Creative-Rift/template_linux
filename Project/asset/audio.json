@@ -1,6 +1,6 @@
 {
   "Horn": {
-    "Path": "Project/asset/audio/Horn.wav",
+    "Path": "asset/audio/Horn.wav",
     "Scene": [
       "main"
     ],

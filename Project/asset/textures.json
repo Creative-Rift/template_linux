@@ -1,13 +1,13 @@
 {
   "MissingTexture": {
-    "Path": "Project/asset/textures/missing_texture.png",
+    "Path": "asset/textures/missing_texture.png",
     "Scene": [
       "main"
     ],
     "Type": "Texture"
   },
   "Logo": {
-    "Path": "Project/asset/textures/logo.png",
+    "Path": "asset/textures/logo.png",
     "Scene": [
       "main"
     ],
