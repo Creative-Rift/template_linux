@@ -32,8 +32,8 @@ foreach(IDX RANGE ${MODULE_DEPENDENCE_LIB_LEN})
     list(APPEND MODULE_DEPENDENCE_LIBRARY ${FINAL})
 endforeach()
 
-file(COPY ${CMAKE_SOURCE_DIR}/${ASSET_PATH}/ DESTINATION ${CMAKE_SOURCE_DIR}/${BUILD_PATH}/asset)
-file(COPY ./Engine/config/ DESTINATION ${CMAKE_SOURCE_DIR}/${BUILD_PATH}/Engine/config)
+file(COPY ${CMAKE_SOURCE_DIR}/${ASSET_PATH}/ DESTINATION ${CMAKE_SOURCE_DIR}/${BUILD_PATH}/out/asset)
+file(COPY ./Engine/config/ DESTINATION ${CMAKE_SOURCE_DIR}/${BUILD_PATH}/out/Engine/config)
 
 message("Project name: " ${NAME})
 message("Executable name: " ${EXEC_NAME})
@@ -60,7 +60,7 @@ cmake_minimum_required( VERSION 3.20 )
 set( CMAKE_BUILD_TYPE ${COMPILE_TYPE} ) # Release / RelWithDebInfo / Debug
 set( CMAKE_CXX_STANDARD 20 )
 set( CMAKE_CXX_STANDARD_REQUIRED True )
-set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BUILD_PATH} )
+set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BUILD_PATH}/out )
 set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG}")
 ## <=====================================>
 

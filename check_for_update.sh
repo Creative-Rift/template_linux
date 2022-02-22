@@ -58,7 +58,7 @@ if [[ ${1} == "-b" ]]; then
     cd $build_folder
     cmake .. -G "Unix Makefiles"
     cmake --build .
-    print "You project are built in " `pwd`
+    print "You project are built in ./${build_folder}/out/"
 fi
 
 if [[ ${1} == "-h" ]]; then
