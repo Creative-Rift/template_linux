@@ -28,12 +28,12 @@ endforeach()
 foreach(IDX RANGE ${MODULE_DEPENDENCE_LIB_LEN})
     string(JSON TMP_DEP_LIB GET ${MODULE_DEPENDENCE} library ${IDX})
     unset(FINAL)
-    string(APPEND FINAL "${ABS_PATH}/${TMP_DEP_LIB}")
+    string(APPEND FINAL "${CMAKE_SOURCE_DIR}/${TMP_DEP_LIB}")
     list(APPEND MODULE_DEPENDENCE_LIBRARY ${FINAL})
 endforeach()
 
-file(COPY ${ABS_PATH}/${ASSET_PATH}/ DESTINATION ${ABS_PATH}/${BUILD_PATH}/asset)
-file(COPY ./Engine/config/ DESTINATION ${ABS_PATH}/${BUILD_PATH}/Engine/config)
+file(COPY ${CMAKE_SOURCE_DIR}/${ASSET_PATH}/ DESTINATION ${CMAKE_SOURCE_DIR}/${BUILD_PATH}/asset)
+file(COPY ./Engine/config/ DESTINATION ${CMAKE_SOURCE_DIR}/${BUILD_PATH}/Engine/config)
 
 message("Project name: " ${NAME})
 message("Executable name: " ${EXEC_NAME})
@@ -56,14 +56,11 @@ message("\n")
 ## <=====================================>
 
 ## <=====================================>
-set( ABS_PATH ${CMAKE_SOURCE_DIR} CACHE STRING "Some user-specified option" )
 cmake_minimum_required( VERSION 3.20 )
 set( CMAKE_BUILD_TYPE ${COMPILE_TYPE} ) # Release / RelWithDebInfo / Debug
 set( CMAKE_CXX_STANDARD 20 )
 set( CMAKE_CXX_STANDARD_REQUIRED True )
-set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${ABS_PATH}/${BUILD_PATH} )
-set( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${ABS_PATH}/lib/ )
-set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${ABS_PATH}/lib/ )
+set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${BUILD_PATH} )
 set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG}")
 ## <=====================================>
 
@@ -83,31 +80,31 @@ set( EXT cpp )
 
 ## SOURCE FOLDERS
 set( SRC_FOLDERS
-        ${ABS_PATH}/Project/sources/
+        ${CMAKE_SOURCE_DIR}/Project/sources/
         )
 ## INCLUDE FOLDERS
 set( INC_FOLDERS
-        ${ABS_PATH}/Project/includes/
-        ${ABS_PATH}/Engine/includes/
-        ${ABS_PATH}/Engine/includes/modules/
-        ${ABS_PATH}/Engine/includes/core/includes/
-        ${ABS_PATH}/${MODULE_INCLUDE}
+        ${CMAKE_SOURCE_DIR}/Project/includes/
+        ${CMAKE_SOURCE_DIR}/Engine/
+        ${CMAKE_SOURCE_DIR}/Engine/modules/
+        ${CMAKE_SOURCE_DIR}/Engine/core/
+        ${CMAKE_SOURCE_DIR}/${MODULE_INCLUDE}
         )
 
 ## IMPORTED SHARED LIBRARY NAME
 set( SHARED_LIB_NAME
         Jsnp
-        Shipwreck
+        SWEngine-Core-Debug
         yaml-cpp
         ${MODULE_NAME}
         ${MODULE_DEPENDENCE_NAME}
         )
 ## IMPORTED SHARED LIBRARY LOCATION
 set( SHARED_LIB_LOCATION
-        ${ABS_PATH}/Engine/library/libJsnp.so
-        ${ABS_PATH}/Engine/library/libShipwreck.so
-        ${ABS_PATH}/Engine/library/libyaml-cpp.so
-        ${ABS_PATH}/${MODULE_PATH}
+        ${CMAKE_SOURCE_DIR}/Engine/libJsnp.so
+        ${CMAKE_SOURCE_DIR}/Engine/libSWEngine-Core-Debug.so
+        ${CMAKE_SOURCE_DIR}/Engine/libyaml-cpp.so
+        ${CMAKE_SOURCE_DIR}/${MODULE_PATH}
         ${MODULE_DEPENDENCE_LIBRARY}
         )
 ## <=====================================>

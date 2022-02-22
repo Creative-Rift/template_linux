@@ -28,7 +28,7 @@ When you want to test you project follow these steps:
 
 * Open a terminal
 * Go to your project's root directory
-* Do `./compile.sh`
+* Run `./check_for_update.sh -b` to build your project
 * Then you can start your project! :boat:
 
 ## Useful links :eyes:

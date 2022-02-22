@@ -9,11 +9,11 @@
   },
   "SFML": {
     "name": "SfmlModule",
-    "path": "Engine/library/libSfmlModule.so",
-    "include": "Engine/includes/modules/Sfml/includes/",
+    "path": "Engine/libSWEngine-SfmlModule.so",
+    "include": "Engine/Sfml/",
     "dependence": {
       "name": ["sfml-audio", "sfml-graphics", "sfml-system", "sfml-window"],
-      "library": ["Engine/library/libsfml-audio.so", "Engine/library/libsfml-graphics.so", "Engine/library/libsfml-system.so", "Engine/library/libsfml-window.so"]
+      "library": ["Engine/libsfml-audio.so", "Engine/libsfml-graphics.so", "Engine/libsfml-system.so", "Engine/libsfml-window.so"]
     }
   }
 }
