@@ -1,9 +1,0 @@
-{
-    "Battle": {
-        "Path": "assets/musics/Battle.ogg",
-        "Scene": [
-            "MainScene"
-        ],
-        "Type": "Music"
-    }
-}
