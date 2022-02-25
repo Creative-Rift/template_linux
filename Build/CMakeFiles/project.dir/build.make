@@ -69,10 +69,38 @@ include CMakeFiles/project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/project.dir/flags.make
 
+CMakeFiles/project.dir/Project/sources/MainScene.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/Project/sources/MainScene.cpp.o: ../Project/sources/MainScene.cpp
+CMakeFiles/project.dir/Project/sources/MainScene.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxime/Repo_Tek/CreativeRift/template_linux/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/Project/sources/MainScene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/Project/sources/MainScene.cpp.o -MF CMakeFiles/project.dir/Project/sources/MainScene.cpp.o.d -o CMakeFiles/project.dir/Project/sources/MainScene.cpp.o -c /home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/MainScene.cpp
+
+CMakeFiles/project.dir/Project/sources/MainScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/Project/sources/MainScene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/MainScene.cpp > CMakeFiles/project.dir/Project/sources/MainScene.cpp.i
+
+CMakeFiles/project.dir/Project/sources/MainScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/Project/sources/MainScene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/MainScene.cpp -o CMakeFiles/project.dir/Project/sources/MainScene.cpp.s
+
+CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o: CMakeFiles/project.dir/flags.make
+CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o: ../Project/sources/ProjectModule.cpp
+CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxime/Repo_Tek/CreativeRift/template_linux/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o -MF CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o.d -o CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o -c /home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/ProjectModule.cpp
+
+CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/ProjectModule.cpp > CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.i
+
+CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/ProjectModule.cpp -o CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.s
+
 CMakeFiles/project.dir/Project/sources/main.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/Project/sources/main.cpp.o: ../Project/sources/main.cpp
 CMakeFiles/project.dir/Project/sources/main.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxime/Repo_Tek/CreativeRift/template_linux/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/Project/sources/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxime/Repo_Tek/CreativeRift/template_linux/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/Project/sources/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/Project/sources/main.cpp.o -MF CMakeFiles/project.dir/Project/sources/main.cpp.o.d -o CMakeFiles/project.dir/Project/sources/main.cpp.o -c /home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/main.cpp
 
 CMakeFiles/project.dir/Project/sources/main.cpp.i: cmake_force
@@ -83,30 +111,18 @@ CMakeFiles/project.dir/Project/sources/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/Project/sources/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/main.cpp -o CMakeFiles/project.dir/Project/sources/main.cpp.s
 
-CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o: ../Project/sources/scenes/Main.cpp
-CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxime/Repo_Tek/CreativeRift/template_linux/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o -MF CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o.d -o CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o -c /home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/scenes/Main.cpp
-
-CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/scenes/Main.cpp > CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.i
-
-CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/scenes/Main.cpp -o CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.s
-
 # Object files for target project
 project_OBJECTS = \
-"CMakeFiles/project.dir/Project/sources/main.cpp.o" \
-"CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o"
+"CMakeFiles/project.dir/Project/sources/MainScene.cpp.o" \
+"CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o" \
+"CMakeFiles/project.dir/Project/sources/main.cpp.o"
 
 # External object files for target project
 project_EXTERNAL_OBJECTS =
 
+out/project: CMakeFiles/project.dir/Project/sources/MainScene.cpp.o
+out/project: CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o
 out/project: CMakeFiles/project.dir/Project/sources/main.cpp.o
-out/project: CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o
 out/project: CMakeFiles/project.dir/build.make
 out/project: ../Engine/libJsnp.so
 out/project: ../Engine/libSWEngine-Core.so
@@ -117,7 +133,7 @@ out/project: ../Engine/libsfml-graphics.so
 out/project: ../Engine/libsfml-system.so
 out/project: ../Engine/libsfml-window.so
 out/project: CMakeFiles/project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maxime/Repo_Tek/CreativeRift/template_linux/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable out/project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maxime/Repo_Tek/CreativeRift/template_linux/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable out/project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

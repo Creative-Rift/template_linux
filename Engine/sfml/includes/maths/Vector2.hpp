@@ -29,8 +29,8 @@ namespace sfml
         public:
             Vector2() : sw::Vector2<T>{} {}
             Vector2(T X, T Y) : sw::Vector2<T>{X, Y} {}
-            Vector2(sf::Vector2<T> vec) : sw::Vector2<T>{vec.x, vec.y} {}
-            Vector2(sw::Vector2<T> vec) : sw::Vector2<T>{vec.x, vec.y} {}
+            Vector2(const sf::Vector2<T>& vec) : sw::Vector2<T>{vec.x, vec.y} {}
+            Vector2(const sw::Vector2<T>& vec) : sw::Vector2<T>{vec.x, vec.y} {}
 
             template <typename U>
             operator sf::Vector2<U>() const { return (sf::Vector2<U>{this->x, this->y}); }

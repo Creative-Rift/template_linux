@@ -29,8 +29,8 @@ namespace sfml
         public:
             Vector3() : sw::Vector3<T>{} {}
             Vector3(T X, T Y, T Z) : sw::Vector3<T>{X, Y, Z} {}
-            Vector3(sf::Vector3<T> vec) : sw::Vector3<T>{vec.x, vec.y, vec.z} {}
-            Vector3(sw::Vector3<T> vec) : sw::Vector3<T>{vec.x, vec.y, vec.z} {}
+            Vector3(const sf::Vector3<T>& vec) : sw::Vector3<T>{vec.x, vec.y, vec.z} {}
+            Vector3(const sw::Vector3<T>& vec) : sw::Vector3<T>{vec.x, vec.y, vec.z} {}
 
             template <typename U>
             operator sf::Vector3<U>() const { return (sf::Vector3<U>{this->x, this->y, this->z}); }

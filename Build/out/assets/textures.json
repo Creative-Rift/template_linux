@@ -12,5 +12,12 @@
       "MainScene"
     ],
     "Type": "Texture"
+  },
+  "Planet": {
+    "Path": "assets/textures/Planet.png",
+    "Scene": [
+        "MainScene"
+    ],
+    "Type": "Texture"
   }
 }

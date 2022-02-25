@@ -129,6 +129,54 @@ project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/build
 .PHONY : project/fast
 
+Project/sources/MainScene.o: Project/sources/MainScene.cpp.o
+.PHONY : Project/sources/MainScene.o
+
+# target to build an object file
+Project/sources/MainScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Project/sources/MainScene.cpp.o
+.PHONY : Project/sources/MainScene.cpp.o
+
+Project/sources/MainScene.i: Project/sources/MainScene.cpp.i
+.PHONY : Project/sources/MainScene.i
+
+# target to preprocess a source file
+Project/sources/MainScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Project/sources/MainScene.cpp.i
+.PHONY : Project/sources/MainScene.cpp.i
+
+Project/sources/MainScene.s: Project/sources/MainScene.cpp.s
+.PHONY : Project/sources/MainScene.s
+
+# target to generate assembly for a file
+Project/sources/MainScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Project/sources/MainScene.cpp.s
+.PHONY : Project/sources/MainScene.cpp.s
+
+Project/sources/ProjectModule.o: Project/sources/ProjectModule.cpp.o
+.PHONY : Project/sources/ProjectModule.o
+
+# target to build an object file
+Project/sources/ProjectModule.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o
+.PHONY : Project/sources/ProjectModule.cpp.o
+
+Project/sources/ProjectModule.i: Project/sources/ProjectModule.cpp.i
+.PHONY : Project/sources/ProjectModule.i
+
+# target to preprocess a source file
+Project/sources/ProjectModule.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.i
+.PHONY : Project/sources/ProjectModule.cpp.i
+
+Project/sources/ProjectModule.s: Project/sources/ProjectModule.cpp.s
+.PHONY : Project/sources/ProjectModule.s
+
+# target to generate assembly for a file
+Project/sources/ProjectModule.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.s
+.PHONY : Project/sources/ProjectModule.cpp.s
+
 Project/sources/main.o: Project/sources/main.cpp.o
 .PHONY : Project/sources/main.o
 
@@ -153,30 +201,6 @@ Project/sources/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Project/sources/main.cpp.s
 .PHONY : Project/sources/main.cpp.s
 
-Project/sources/scenes/Main.o: Project/sources/scenes/Main.cpp.o
-.PHONY : Project/sources/scenes/Main.o
-
-# target to build an object file
-Project/sources/scenes/Main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o
-.PHONY : Project/sources/scenes/Main.cpp.o
-
-Project/sources/scenes/Main.i: Project/sources/scenes/Main.cpp.i
-.PHONY : Project/sources/scenes/Main.i
-
-# target to preprocess a source file
-Project/sources/scenes/Main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.i
-.PHONY : Project/sources/scenes/Main.cpp.i
-
-Project/sources/scenes/Main.s: Project/sources/scenes/Main.cpp.s
-.PHONY : Project/sources/scenes/Main.s
-
-# target to generate assembly for a file
-Project/sources/scenes/Main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.s
-.PHONY : Project/sources/scenes/Main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... project"
+	@echo "... Project/sources/MainScene.o"
+	@echo "... Project/sources/MainScene.i"
+	@echo "... Project/sources/MainScene.s"
+	@echo "... Project/sources/ProjectModule.o"
+	@echo "... Project/sources/ProjectModule.i"
+	@echo "... Project/sources/ProjectModule.s"
 	@echo "... Project/sources/main.o"
 	@echo "... Project/sources/main.i"
 	@echo "... Project/sources/main.s"
-	@echo "... Project/sources/scenes/Main.o"
-	@echo "... Project/sources/scenes/Main.i"
-	@echo "... Project/sources/scenes/Main.s"
 .PHONY : help
 
 

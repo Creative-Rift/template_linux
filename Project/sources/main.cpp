@@ -13,17 +13,16 @@
  */
 
 #include "SW/Engine.hpp"
-#include "SF/Module.hpp"
-#include "scenes/Main.hpp"
+#include "ProjectModule.hpp"
+#include "main.hpp"
 
 int main()
 try
 {
-    sw::Speech::setDisplayed(true);
+    sw::Speech::setDisplayed(false);
     sw::Speech::stack = true;
 
-    sw::Engine::createModule<sfml::Module>();
-    sw::Engine::createScene<MainScene>("MainScene");
+    sw::Engine::createModule<ProjectModule>();
 
     sw::Engine::initialize();
     sw::Engine::activeScene().load();

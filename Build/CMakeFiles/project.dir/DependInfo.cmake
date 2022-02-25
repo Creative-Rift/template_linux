@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/MainScene.cpp" "CMakeFiles/project.dir/Project/sources/MainScene.cpp.o" "gcc" "CMakeFiles/project.dir/Project/sources/MainScene.cpp.o.d"
+  "/home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/ProjectModule.cpp" "CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o" "gcc" "CMakeFiles/project.dir/Project/sources/ProjectModule.cpp.o.d"
   "/home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/main.cpp" "CMakeFiles/project.dir/Project/sources/main.cpp.o" "gcc" "CMakeFiles/project.dir/Project/sources/main.cpp.o.d"
-  "/home/maxime/Repo_Tek/CreativeRift/template_linux/Project/sources/scenes/Main.cpp" "CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o" "gcc" "CMakeFiles/project.dir/Project/sources/scenes/Main.cpp.o.d"
   )
 
 # Targets to which this target links.

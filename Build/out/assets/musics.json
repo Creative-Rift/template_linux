@@ -1,6 +1,6 @@
 {
-    "Music": {
-        "Path": "assets/musics/ambiance.ogg",
+    "Battle": {
+        "Path": "assets/musics/Battle.ogg",
         "Scene": [
             "MainScene"
         ],
