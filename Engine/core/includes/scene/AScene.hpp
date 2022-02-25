@@ -221,7 +221,10 @@ namespace sw
             ///
 
             [[nodiscard]] sw::EventManager& eventManager();
-            [[nodiscard]] std::unique_ptr<AResources>& resources();
+
+            [[nodiscard]] AResources& resources();
+            template <ConcreteResource Resources>
+            [[nodiscard]] Resources& resources();
 
             /*////////////////////////////////////////////////////////////////*/
             /// @brief Function called to initialize the @b Scene.

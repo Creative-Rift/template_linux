@@ -254,51 +254,51 @@ namespace sw
 
         /// Warning Engine Load
         static Log info150(const std::string& function)
-        { return Log(function + "Initialize Engine ...", "1150"); }
+        { return Log(function + " - Initialize Engine ...", "1150"); }
 
         /// Warning Engine Load Successfully
         static Log info150_Success(const std::string& function)
-        { return Log(function + "Engine was successfully initialized !", "1150"); }
+        { return Log(function + " - Engine was successfully initialized !", "1150"); }
 
         /// Warning Engine Update
         static Log info160(const std::string& function)
-        { return Log(function + "Updating Engine ...", "1160"); }
+        { return Log(function + " - Updating Engine ...", "1160"); }
 
         /// Warning Engine Update Successfully
         static Log info160_Success(const std::string& function)
-        { return Log(function + "Engine was successfully updated !", "1160"); }
+        { return Log(function + " - Engine was successfully updated !", "1160"); }
 
         /// Warning Engine Unload
         static Log info170(const std::string& function)
-        { return Log(function + "Terminating Engine ...", "1170"); }
+        { return Log(function + " - Terminating Engine ...", "1170"); }
 
         /// Warning Engine Unload Successfully
         static Log info170_Success(const std::string& function)
-        { return Log(function + "Engine was successfully terminated !", "1170"); }
+        { return Log(function + " - Engine was successfully terminated !", "1170"); }
 
         /// Warning Scene Load
         static Log info350(const std::string& function, const std::string& sceneName)
-        { return Log(function + "Loading Scene <" + sceneName + "> ...", "1350"); }
+        { return Log(function + " - Loading Scene <" + sceneName + "> ...", "1350"); }
 
         /// Warning Scene Load Successfully
         static Log info350_Success(const std::string& function, const std::string& sceneName)
-        { return Log(function + "Scene <" + sceneName + "> was successfully load !", "1350"); }
+        { return Log(function + " - Scene <" + sceneName + "> was successfully load !", "1350"); }
 
         /// Warning Scene Update
         static Log info360(const std::string& function, const std::string& sceneName)
-        { return Log(function + "Updating Scene <" + sceneName + "> ...", "1360"); }
+        { return Log(function + " - Updating Scene <" + sceneName + "> ...", "1360"); }
 
         /// Warning Scene Update Successfully
         static Log info360_Success(const std::string& function, const std::string& sceneName)
-        { return Log(function + "Scene <" + sceneName + "> was successfully updated !", "1360"); }
+        { return Log(function + " - Scene <" + sceneName + "> was successfully updated !", "1360"); }
 
         /// Warning Scene Unload
         static Log info370(const std::string& function, const std::string& sceneName)
-        { return Log(function + "Unloading Scene <" + sceneName + "> ...", "1370"); }
+        { return Log(function + " - Unloading Scene <" + sceneName + "> ...", "1370"); }
 
         /// Warning Scene Unload Successfully
         static Log info370_Success(const std::string& function, const std::string& sceneName)
-        { return Log(function + "Scene <" + sceneName + "> was successfully unload !", "1370"); }
+        { return Log(function + " - Scene <" + sceneName + "> was successfully unload !", "1370"); }
 
 
         /*

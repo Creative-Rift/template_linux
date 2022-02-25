@@ -29,28 +29,28 @@
 namespace sw
 {
 
-    template<ConcreteComponent Cpt>
+    template<EventCallable Element>
     class SW_CORE_API_EXPORT EventListener
         :   public _IEventListener
     {
 
         private:
             /*////////////////////////////////////////////////////////////////*/
-            /// @brief A reference to the linked @b Component. It will be use
+            /// @brief A reference to the linked @b Element. It will be use
             /// to call its referenced function.
             //
-            Cpt& m_cpt;
+            Element& m_element;
             ///
 
             /*////////////////////////////////////////////////////////////////*/
-            /// @brief The referenced @b Component function. The variant contains
+            /// @brief The referenced @b Element function. The variant contains
             /// either a function without argument or a function that take an
             /// EventInfo as argument. This function will be call when the @b Event
             /// listen by the @b EventListener occured.
             //
             std::variant<
-                void (Cpt::*)(void),
-                void (Cpt::*)(EventInfo&)
+                void (Element::*)(void),
+                void (Element::*)(EventInfo&)
             > m_call;
             ///
 
@@ -58,19 +58,19 @@ namespace sw
             /*////////////////////////////////////////////////////////////////*/
             /// @brief Default @c Constructor of an @b Event.
             ///
-            /// @param obj The linked @b Component.
-            /// @param call The referenced @b Component function, without argument.
+            /// @param obj The linked @b Element.
+            /// @param call The referenced @b Element function, without argument.
             //
-            explicit EventListener(Cpt& obj, void (Cpt::*call)());
+            explicit EventListener(Element& obj, void (Element::*call)());
 
             /*////////////////////////////////////////////////////////////////*/
             /// @brief Default @c Constructor of an @b Event.
             ///
-            /// @param obj The linked @b Component.
-            /// @param call The referenced @b Component function, with an EventInfo
+            /// @param obj The linked @b Element.
+            /// @param call The referenced @b Element function, with an EventInfo
             /// as argument.
             //
-            explicit EventListener(Cpt& obj, void (Cpt::*call)(EventInfo&));
+            explicit EventListener(Element& obj, void (Element::*call)(EventInfo&));
 
             /*////////////////////////////////////////////////////////////////*/
             /// @brief Default @c Destructor of an @b Event.
@@ -79,27 +79,27 @@ namespace sw
             ///
 
             /*////////////////////////////////////////////////////////////////*/
-            /// @brief Execute the referenced @b Component function without argument.
+            /// @brief Execute the referenced @b Element function without argument.
             //
             void catchEvent() override;
             ///
 
             /*////////////////////////////////////////////////////////////////*/
-            /// @brief Execute the referenced @b Component function with an
+            /// @brief Execute the referenced @b Element function with an
             /// EventInfo as argument.
             ///
-            /// @param info The information class needed by the @b Component function
+            /// @param info The information class needed by the @b Element function
             /// that will be called.
             //
             void catchEvent(EventInfo& info) override;
             ///
 
             /*////////////////////////////////////////////////////////////////*/
-            /// @brief Return the @b Entity name of the referenced @b Component.
+            /// @brief Return the @b Entity name of the referenced @b Element.
             ///
             /// @return The Entity name.
             //
-            [[nodiscard]] std::string linkedEntity() const override;
+            [[nodiscard]] std::string linkedElement() const override;
             ///
 
     }; // class EventListener

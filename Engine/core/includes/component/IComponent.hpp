@@ -20,6 +20,8 @@
 #ifndef __SHIPWRECK_CORE_ICOMPONENT_HPP__
 #define __SHIPWRECK_CORE_ICOMPONENT_HPP__
 
+#include <string>
+
 #include "../concepts.hpp"
 
 namespace sw
@@ -33,6 +35,15 @@ namespace sw
             /// @brief Default @c Destructor of an @b _IComponent.
             //
             virtual ~_IComponent() = default;
+            ///
+
+            /*////////////////////////////////////////////////////////////////*/
+            /// @brief Return a string corresponding to the @b Entity name
+            /// of the @b Component.
+            ///
+            /// @return The type name.
+            //
+            virtual std::string name() const = 0;
             ///
 
             /*////////////////////////////////////////////////////////////////*/

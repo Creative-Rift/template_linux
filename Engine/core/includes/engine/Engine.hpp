@@ -91,6 +91,12 @@ namespace sw
             ///
 
             /*////////////////////////////////////////////////////////////////*/
+            /// @brief EventManager use in the @b Engine internaly.
+            //
+            static EventManager m_eventManager;
+            ///
+
+            /*////////////////////////////////////////////////////////////////*/
             /// @brief This function delete the requested @b Scenes at the end
             /// of the update.
             //
@@ -193,6 +199,14 @@ namespace sw
             /// @return The wanted @b Scene, with the abstract type.
             //
             static AScene& getScene(const std::string& sceneName);
+            ///
+
+            /*////////////////////////////////////////////////////////////////*/
+            /// @brief Get the @b EventManager of the @b Engine.
+            ///
+            /// @return The @b EventManager.
+            //
+            static EventManager& eventManager();
             ///
 
             /*////////////////////////////////////////////////////////////////*/

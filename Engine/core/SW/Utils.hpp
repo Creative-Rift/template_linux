@@ -1,12 +1,20 @@
-/*
-** SHIPWRECK ENGINE, 2021
-** Software Engine Project
-** File description:
-** Utils.hpp
-*/
+/**
+ * Society: Creative Rift
+ * SHIPWRECK ENGINE CORE, 2021
+ * Software Engine Project
+ *
+ * Author:
+ * Guillaume S. and Maxime P.
+ * File name:
+ * Utils.hpp
+ *
+ * Description:
+ * SWEngine provide some different tool
+ * that can be useful in your Project/Module.
+ */
 
-#ifndef __SW_INC_UTILS_HPP__
-#define __SW_INC_UTILS_HPP__
+#ifndef __SW_CORE_INC_UTILS_HPP__
+#define __SW_CORE_INC_UTILS_HPP__
 
 #include "../includes/utils/Chrono.hpp"
 #include "../includes/utils/matrix.hpp"
@@ -14,5 +22,6 @@
 #include "../includes/utils/Reference.hpp"
 #include "../includes/utils/Speech.hpp"
 #include "../includes/utils/vector2.hpp"
+#include "../includes/utils/vector3.hpp"
 
-#endif // __SW_INC_UTILS_HPP__
+#endif // __SW_CORE_INC_UTILS_HPP__

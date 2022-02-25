@@ -62,6 +62,15 @@ namespace sw
             ///
 
             /*////////////////////////////////////////////////////////////////*/
+            /// @brief Return a string corresponding to the @b Entity name
+            /// of the @b Component.
+            ///
+            /// @return The type name.
+            //
+            std::string name() const override;
+            ///
+
+            /*////////////////////////////////////////////////////////////////*/
             /// @brief Change the activity of the @b Component.
             ///
             /// @param value True or false.

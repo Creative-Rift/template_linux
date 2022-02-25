@@ -1,0 +1,9 @@
+{
+    "Music": {
+        "Path": "assets/musics/ambiance.ogg",
+        "Scene": [
+            "MainScene"
+        ],
+        "Type": "Music"
+    }
+}

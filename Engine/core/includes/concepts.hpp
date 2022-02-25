@@ -44,6 +44,9 @@ namespace sw
     class IModel;
 
     template <class T>
+    concept ConcreteResource = std::is_base_of<AResources, T>::value;
+
+    template <class T>
     concept ConcreteModule = std::is_base_of<AModule, T>::value;
 
     template <class T>
@@ -61,6 +64,11 @@ namespace sw
     template <class T, class Cpt>
     concept ConcreteChild = std::is_base_of<Component, Cpt>::value
                             && std::is_base_of<Cpt, T>::value;
+
+    template <class T>
+    concept EventCallable = std::is_base_of<Component, T>::value
+                            || std::is_base_of<AModule, T>::value
+                            || std::is_base_of<AScene, T>::value;
 
     template <class T>
     concept ConcreteTexture = std::is_base_of<ITexture, T>::value;

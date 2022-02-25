@@ -162,6 +162,26 @@ try
     return (*m_components.at(entityName));
 }
 catch (std::out_of_range&) {
+    throw sw::Error(sw::Log::error416(FUNCTION, "Error", entityName));
+}
+
+template<ConcreteComponent Cpt>
+Cpt& sw::AManager<Cpt>::Components::get(const std::string& entityName)
+try
+{
+    return (*(this->at(entityName)));
+}
+catch (std::out_of_range&) {
+    throw sw::Error(sw::Log::error416(FUNCTION, "Error", entityName));
+}
+
+template<ConcreteComponent Cpt>
+const Cpt& sw::AManager<Cpt>::Components::get(const std::string& entityName) const
+try
+{
+    return (*(this->at(entityName)));
+}
+catch (std::out_of_range&) {
     throw sw::Error(sw::Log::error416(FUNCTION, m_name, entityName));
 }
 
@@ -219,7 +239,7 @@ std::string sw::AManager<Cpt>::name() const
 { return (m_name); }
 
 template<ConcreteComponent Cpt>
-std::string AManager<Cpt>::type() const
+std::string sw::AManager<Cpt>::type() const
 {
     return ("AManager");
 }

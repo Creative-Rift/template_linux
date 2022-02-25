@@ -1,0 +1,3 @@
+/home/maxime/Repo_Tek/CreativeRift/template_linux/Build/CMakeFiles/rebuild_cache.dir
+/home/maxime/Repo_Tek/CreativeRift/template_linux/Build/CMakeFiles/edit_cache.dir
+/home/maxime/Repo_Tek/CreativeRift/template_linux/Build/CMakeFiles/project.dir

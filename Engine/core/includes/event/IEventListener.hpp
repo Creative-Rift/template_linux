@@ -10,7 +10,7 @@
  *
  * Description:
  * Interface class of EventListener
- * An EventListener is link to a Component. It is use to follow an event
+ * An EventListener is link to a Element. It is use to follow an event
  * and call the referenced function when it occured.
  */
 
@@ -36,27 +36,27 @@ namespace sw
             ///
 
             /*////////////////////////////////////////////////////////////////*/
-            /// @brief Execute the referenced @b Component function without argument.
+            /// @brief Execute the referenced @b Element function without argument.
             //
             virtual void catchEvent() = 0;
             ///
 
             /*////////////////////////////////////////////////////////////////*/
-            /// @brief Execute the referenced @b Component function with an
+            /// @brief Execute the referenced @b Element function with an
             /// EventInfo as argument.
             ///
-            /// @param info The information class needed by the @b Component function
+            /// @param info The information class needed by the @b Element function
             /// that will be called.
             //
             virtual void catchEvent(EventInfo& info) = 0;
             ///
 
             /*////////////////////////////////////////////////////////////////*/
-            /// @brief Return the @b Entity name of the referenced @b Component.
+            /// @brief Return the @b Entity name of the referenced @b Element.
             ///
             /// @return The Entity name.
             //
-            virtual std::string linkedEntity() const = 0;
+            virtual std::string linkedElement() const = 0;
             ///
 
     }; //

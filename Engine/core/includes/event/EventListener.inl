@@ -12,44 +12,44 @@
  * Implementation of EventListener functions
  */
 
-template<ConcreteComponent Cpt>
-inline sw::EventListener<Cpt>::EventListener(Cpt& obj, void (Cpt::*call)())
-    :   m_cpt{obj},
+template<EventCallable Element>
+inline sw::EventListener<Element>::EventListener(Element& obj, void (Element::*call)())
+    :   m_element{obj},
         m_call{call}
 {}
 
-template<ConcreteComponent Cpt>
-inline sw::EventListener<Cpt>::EventListener(Cpt& obj, void (Cpt::*call)(EventInfo&))
-    :   m_cpt{obj},
+template<EventCallable Element>
+inline sw::EventListener<Element>::EventListener(Element& obj, void (Element::*call)(EventInfo&))
+    :   m_element{obj},
         m_call{call}
 {}
 
-template<ConcreteComponent Cpt>
-inline void sw::EventListener<Cpt>::catchEvent()
+template<EventCallable Element>
+inline void sw::EventListener<Element>::catchEvent()
 try
 {
-    auto& call = std::get<void (Cpt::*)()>(m_call);
-    ((m_cpt).*call)();
+    auto& call = std::get<void (Element::*)()>(m_call);
+    ((m_element).*call)();
 }
 catch (std::bad_variant_access&)
 {
-    sw::Speech::Warning(sw::Log::warningC40(FUNCTION, m_cpt.entity().name()));
+    sw::Speech::Warning(sw::Log::warningC40(FUNCTION, m_element.entity().name()));
 }
 
-template<ConcreteComponent Cpt>
-inline void sw::EventListener<Cpt>::catchEvent(EventInfo& info)
+template<EventCallable Element>
+inline void sw::EventListener<Element>::catchEvent(EventInfo& info)
 try
 {
-    auto& call = std::get<void (Cpt::*)(EventInfo&)>(m_call);
-    ((m_cpt).*call)(info);
+    auto& call = std::get<void (Element::*)(EventInfo&)>(m_call);
+    ((m_element).*call)(info);
 }
 catch (std::bad_variant_access&)
 {
-    sw::Speech::Warning(sw::Log::warningC40(FUNCTION, m_cpt.entity().name()));
+    sw::Speech::Warning(sw::Log::warningC40(FUNCTION, m_element.entity().name()));
 }
 
-template<ConcreteComponent Cpt>
-inline std::string sw::EventListener<Cpt>::linkedEntity() const
+template<EventCallable Element>
+inline std::string sw::EventListener<Element>::linkedElement() const
 {
-    return (m_cpt.entity().name());
+    return (m_element.name());
 }

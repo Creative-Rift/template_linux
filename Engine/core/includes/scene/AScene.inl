@@ -12,8 +12,20 @@
  * Implementation of Scene functions
  */
 
-inline std::unique_ptr<sw::AResources>& sw::AScene::resources()
-{ return (m_resources); }
+inline sw::AResources& sw::AScene::resources()
+{
+    if (m_resources == nullptr)
+        throw sw::Error(std::string(FUNCTION) + " - Resource of Scene <" + m_name + "> has not be created.", "4317");
+    return (*m_resources);
+}
+
+template <sw::ConcreteResource Resources>
+inline Resources& sw::AScene::resources()
+{
+    if (m_resources == nullptr)
+        throw sw::Error(std::string(FUNCTION) + " - Resource of Scene <" + m_name + "> has not be created.", "4317");
+    return (static_cast<Resources&>(*m_resources));
+}
 
 inline sw::EventManager& sw::AScene::eventManager()
 { return (m_eventManager); }

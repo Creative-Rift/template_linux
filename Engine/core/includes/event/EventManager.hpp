@@ -128,8 +128,11 @@ namespace sw
             /// @param target The list of target that will received the notification
             /// among the listener. You need to provide the @b Entity name of the
             //
-            void drop(const std::string& eventName, std::set<std::string> target);
+            void drop(const std::string& eventName, std::set<std::string> targets);
             ///
+
+            void drop(const std::string& eventName, const std::string& target);
+            void drop(const std::string& eventName, EventInfo& info, const std::string& target);
 
             /*////////////////////////////////////////////////////////////////*/
             /// @brief When the @b Event occured, call this function to send

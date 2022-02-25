@@ -20,6 +20,11 @@ inline sw::Component::Component(sw::Entity& entityRef)
         m_entity{entityRef}
 {}
 
+inline std::string sw::Component::name() const
+{
+    return (m_entity.name());
+}
+
 inline void sw::Component::setActive(bool value)
 {
     m_isActive = value;

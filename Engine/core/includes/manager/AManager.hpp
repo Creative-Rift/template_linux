@@ -80,13 +80,17 @@ namespace sw
             class Components :
                 private std::unordered_map<std::string, std::unique_ptr<Cpt>>
             {
+                protected:
+                    using std::unordered_map<std::string, std::unique_ptr<Cpt>>::at;
+
                 public:
                     using std::unordered_map<std::string, std::unique_ptr<Cpt>>::begin;
                     using std::unordered_map<std::string, std::unique_ptr<Cpt>>::end;
-                    using std::unordered_map<std::string, std::unique_ptr<Cpt>>::operator[];
+
+                    Cpt& get(const std::string& entityName);
+                    const Cpt& get(const std::string& entityName) const;
 
                 friend AManager;
-
             }
             /*////////////////////////////////////////////////////////////////*/
             /// @brief The map use to store the created @b Components.
@@ -110,7 +114,6 @@ namespace sw
                     using std::forward_list<std::pair<int, std::string>>::end;
 
                 friend AManager;
-
             }
             /*////////////////////////////////////////////////////////////////*/
             /// @brief The map use to reference the @b Components by their layers.

@@ -108,8 +108,11 @@ namespace sw
             /// among the listener. You need to provide the @b Entity name of the
             /// @b Component listener.
             //
-            void drop(std::set<std::string> target);
+            void drop(std::set<std::string> targets);
             ///
+
+            void drop(const std::string& target);
+            void drop(EventInfo& info, const std::string& target);
 
             /*////////////////////////////////////////////////////////////////*/
             /// @brief When the Event occured, call this function to drop a
@@ -121,7 +124,7 @@ namespace sw
             /// among the listener. You need to provide the @b Entity name of the
             /// @b Component listener.
             //
-            void drop(EventInfo& info, std::set<std::string> target);
+            void drop(EventInfo& info, std::set<std::string> targets);
             ///
 
     }; // class Event

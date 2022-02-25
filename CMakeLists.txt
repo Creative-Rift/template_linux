@@ -32,7 +32,7 @@ foreach(IDX RANGE ${MODULE_DEPENDENCE_LIB_LEN})
     list(APPEND MODULE_DEPENDENCE_LIBRARY ${FINAL})
 endforeach()
 
-file(COPY ${CMAKE_SOURCE_DIR}/${ASSET_PATH}/ DESTINATION ${CMAKE_SOURCE_DIR}/${BUILD_PATH}/out/asset)
+file(COPY ${CMAKE_SOURCE_DIR}/${ASSET_PATH}/ DESTINATION ${CMAKE_SOURCE_DIR}/${BUILD_PATH}/out/assets)
 file(COPY ./Engine/config/ DESTINATION ${CMAKE_SOURCE_DIR}/${BUILD_PATH}/out/Engine/config)
 
 message("Project name: " ${NAME})
@@ -94,7 +94,7 @@ set( INC_FOLDERS
 ## IMPORTED SHARED LIBRARY NAME
 set( SHARED_LIB_NAME
         Jsnp
-        SWEngine-Core-Debug
+        SWEngine-Core
         yaml-cpp
         ${MODULE_NAME}
         ${MODULE_DEPENDENCE_NAME}
@@ -102,7 +102,7 @@ set( SHARED_LIB_NAME
 ## IMPORTED SHARED LIBRARY LOCATION
 set( SHARED_LIB_LOCATION
         ${CMAKE_SOURCE_DIR}/Engine/libJsnp.so
-        ${CMAKE_SOURCE_DIR}/Engine/libSWEngine-Core-Debug.so
+        ${CMAKE_SOURCE_DIR}/Engine/libSWEngine-Core.so
         ${CMAKE_SOURCE_DIR}/Engine/libyaml-cpp.so
         ${CMAKE_SOURCE_DIR}/${MODULE_PATH}
         ${MODULE_DEPENDENCE_LIBRARY}

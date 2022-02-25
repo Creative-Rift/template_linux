@@ -1,0 +1,9 @@
+{
+  "Verdana": {
+    "Path": "assets/fonts/verdana.ttf",
+    "Scene": [
+      "MainScene"
+    ],
+    "Type": "Font"
+  }
+}
