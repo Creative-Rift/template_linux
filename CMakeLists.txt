@@ -70,8 +70,6 @@ set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG}")
 project( ${NAME}
         VERSION
         1.0
-        DESCRIPTION
-        "Unitest for the core Engine"
         LANGUAGES
         CXX
         )
@@ -86,7 +84,6 @@ set( SRC_FOLDERS
 set( INC_FOLDERS
         ${CMAKE_SOURCE_DIR}/Project/includes/
         ${CMAKE_SOURCE_DIR}/Engine/
-        ${CMAKE_SOURCE_DIR}/Engine/modules/
         ${CMAKE_SOURCE_DIR}/Engine/core/
         ${CMAKE_SOURCE_DIR}/${MODULE_INCLUDE}
         )
