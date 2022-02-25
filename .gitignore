@@ -27,3 +27,7 @@ Build/
 *.exe
 *.out
 *.app
+
+# IDE cache
+.idea
+.vscode

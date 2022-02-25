@@ -30,9 +30,6 @@ if [[ ${1} == "-i" ]]; then
     if [[ ! -d ${libraries_folder} ]]; then
         mkdir ${libraries_folder} || exit 1
     fi
-
-    download "JsonParser" "json_parser" "linux" "JSNP"
-    download "SWEngine-Core" "core" "linux" "core"
 fi
 
 if [[ ${1} == "-c" ]]; then
