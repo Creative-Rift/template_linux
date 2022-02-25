@@ -1,0 +1,16 @@
+{
+  "Horn": {
+    "Path": "assets/sounds/Horn.wav",
+    "Scene": [
+      "MainScene"
+    ],
+    "Type": "Sound"
+  },
+  "Play": {
+    "Path": "assets/sounds/Play.wav",
+    "Scene": [
+        "MainScene"
+    ],
+    "Type": "Sound"
+  }
+}

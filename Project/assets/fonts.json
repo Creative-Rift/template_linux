@@ -1,0 +1,16 @@
+{
+  "Verdana": {
+    "Path": "assets/fonts/verdana.ttf",
+    "Scene": [
+      "MainScene"
+    ],
+    "Type": "Font"
+  },
+  "Galaxy": {
+    "Path": "assets/fonts/XenGalaxy.ttf",
+    "Scene": [
+        "MainScene"
+    ],
+    "Type": "Font"
+  }
+}
